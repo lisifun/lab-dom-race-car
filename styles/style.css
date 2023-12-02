@@ -64,3 +64,23 @@ body button {
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
+.containers {
+  background-color: black;
+  color: white;
+  width: 15vw;
+}
+
+#clock-container {
+  display: none;
+  font-family: "Orbitron", sans-serif;
+  justify-content: center;
+}
+
+#stats-container {
+  display: none;
+}
+
+#end-message {
+  font-size: 22px;
+}

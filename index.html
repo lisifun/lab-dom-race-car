@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Island Racer</title>
   </head>
@@ -19,13 +25,16 @@
       </div>
 
       <div id="game-container">
-        <div>
-          <h2>Status</h2>
+        <div class="containers" id="stats-container">
+          <h2>Stats</h2>
           <p>Score: <span id="score">0</span></p>
           <p>Lives: <span id="lives">3</span></p>
         </div>
         <!-- #game-screen is initially hidden using CSS style display: none -->
         <div id="game-screen"></div>
+        <div class="containers" id="clock-container">
+          <p>Time left: <span id="clock">30</span></p>
+        </div>
       </div>
 
       <!-- #game-end is initially hidden using CSS style display: none -->
@@ -33,9 +42,12 @@
         <img src="./images/logo.png" alt="" class="logo-img" />
         <h1>Game Over</h1>
         <br />
+        <p id="end-message"></p>
+        <br />
         <button id="restart-button">Restart</button>
       </div>
     </main>
+
     <script type="text/javascript" src="js/obstacle.js"></script>
     <script type="text/javascript" src="js/player.js"></script>
     <script type="text/javascript" src="js/game.js"></script>

@@ -20,6 +20,7 @@ class Player {
   move() {
     this.left += this.directionX;
     this.top += this.directionY;
+
     if (this.left <= 0) {
       this.left = 5;
       this.directionX *= -1;
